@@ -41,8 +41,12 @@ class TestDemoWebShop(unittest.TestCase):
         titlepage = driver.title
         self.assertTrue = (titlepage == "checkout")
         driver.find_element(By.CLASS_NAME, "button-1.new-address-next-step-button").click()
-        driver.find_element(By.XPATH, "//*[@title='Continue']").click()
         
+        #driver.find_element(By.XPATH, "//*[@title='Continue']").click()
+        
+      
+       
+      
         
 
        
