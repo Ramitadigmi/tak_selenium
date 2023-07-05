@@ -30,19 +30,30 @@ class TestDemoWebShop(unittest.TestCase):
         driver.find_element(By.CLASS_NAME, "cart-label").click()
         titlepage = driver.title
         self.assertTrue = (titlepage == "shoping cart")
-        driver.find_element(By.NAME, "removefromcart").click()
         country = driver.find_element(By.ID, "CountryId")
         negara = Select (country)
         negara.select_by_visible_text("United States")
         driver.find_element(By.ID, "ZipPostalCode").send_keys("117116")
         driver.find_element(By.NAME, "estimateshipping").click()
+        driver.find_element(By.NAME, "removefromcart").click()
         driver.find_element(By.ID, "termsofservice").click()
         driver.find_element(By.ID, "checkout").click()
         titlepage = driver.title
         self.assertTrue = (titlepage == "checkout")
-        driver.find_element(By.CLASS_NAME, "button-1.new-address-next-step-button").click()
+        billing = driver.find_element(By.ID,"billing-address-select")
+        almtbil = Select (billing)
+        almtbil.select_by_visible_text("ramita ram, aa, aa, AA (Armed Forces Americas) aa, United States")
+        driver.find_element(By.XPATH,"//input[@onclick='Billing.save()']").click()
+      
         
-        #driver.find_element(By.XPATH, "//*[@title='Continue']").click()
+
+        
+def tearDown(self):
+    self.driver.close()
+   
+
+if __name__ == "__main__":
+    unittest.main()
         
       
        

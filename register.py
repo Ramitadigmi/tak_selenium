@@ -36,7 +36,7 @@ class TestDemoWebShop(unittest.TestCase):
 
     
 
-    def test_b_register_failed(self): #testcase2negative  with not input email
+    def test_b_register_failed(self): #testcase2negative  
         driver = self.driver
         driver.get(self.url)
         driver.get(self.register)
