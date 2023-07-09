@@ -21,7 +21,6 @@ class TestDemoWebShop(unittest.TestCase):
         driver = self.driver
         driver.get(self.url)
         driver.get(self.register)
-        login_variable.test_a_login_success(driver)
         driver.find_element(By.ID, "gender-male").click()
         driver.find_element(By.ID, "FirstName").send_keys("ramita")
         driver.find_element(By.ID, "LastName").send_keys("ram")
