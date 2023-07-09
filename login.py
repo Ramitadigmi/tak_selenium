@@ -7,9 +7,6 @@ from selenium.webdriver.common.by import By
 import login_variable
 
 
-
-
-
 class TestDemoWebShop(unittest.TestCase): 
 
     def setUp(self):
@@ -43,6 +40,5 @@ class TestDemoWebShop(unittest.TestCase):
 def tearDown(self):
     self.driver.close()
    
-
 if __name__ == "__main__":
     unittest.main()
