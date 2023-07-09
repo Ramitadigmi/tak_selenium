@@ -4,8 +4,6 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-
-
 import login_variable
 
 
@@ -17,8 +15,6 @@ class TestDemoWebShop(unittest.TestCase):
         self.url = "https://demowebshop.tricentis.com/"
         self.login = "https://demowebshop.tricentis.com/login"
         self.register = "https://demowebshop.tricentis.com/register"
-
-
 
 
     def test_a_register_success(self): #testcase2positive
@@ -34,7 +30,6 @@ class TestDemoWebShop(unittest.TestCase):
         driver.find_element(By.ID, "ConfirmPassword").send_keys("ramita123")
         driver.find_element(By.ID, "register-button").click()
 
-    
 
     def test_b_register_failed(self): #testcase2negative  
         driver = self.driver
@@ -55,7 +50,6 @@ class TestDemoWebShop(unittest.TestCase):
 
 def tearDown(self):
     self.driver.close()
-   
 
 if __name__ == "__main__":
     unittest.main()
