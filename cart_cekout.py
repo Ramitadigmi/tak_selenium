@@ -43,6 +43,8 @@ class TestDemoWebShop(unittest.TestCase):
         almtbil = Select (billing)
         almtbil.select_by_visible_text("ramita ram, aa, aa, AA (Armed Forces Americas) aa, United States")
         driver.find_element(By.XPATH,"//input[@onclick='Billing.save()']").click()
+        
+        //disini coding mentok mba, tombol next tidak bisa di ambil element nya, bisa di ambil  sih degan path, cuma pas di run gagal.
       
         
         
