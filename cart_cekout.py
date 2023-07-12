@@ -45,7 +45,6 @@ class TestDemoWebShop(unittest.TestCase):
         driver.find_element(By.XPATH,"//input[@onclick='Billing.save()']").click()
       
         
-
         
 def tearDown(self):
     self.driver.close()
@@ -54,35 +53,3 @@ def tearDown(self):
 if __name__ == "__main__":
     unittest.main()
         
-      
-       
-      
-        
-
-       
-        
-
-        
-        
-        
-
-def tearDown(self):
-    self.driver.close()
-   
-
-if __name__ == "__main__":
-    unittest.main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
