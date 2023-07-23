@@ -13,7 +13,6 @@ class TestDemoWebShop(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
         self.url = "https://demowebshop.tricentis.com/"
-        self.login = "https://demowebshop.tricentis.com/login"
         self.register = "https://demowebshop.tricentis.com/register"
 
 
